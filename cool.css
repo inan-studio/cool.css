@@ -1,0 +1,88 @@
+/* Select */
+
+select.select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: #fff;
+	min-width: 215px;
+	height: 26px;
+	border: 1px solid #d3d3d3;
+	border-radius: 26px;
+	line-height: 22px;
+	padding: 0 10px;
+}
+
+*:focus, *:hover, * {
+	user-select: none;
+	outline: none;
+}
+
+select.select option:hover {
+	outline: none;
+}
+
+/* Radio */
+
+label.radio input { display: none; }
+
+label.radio .radio {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 14px;
+	background: #fff;
+	border: 1px solid #ddd;
+	position: relative;
+}
+
+label.radio .radio:before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	background: #eee;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	transition: 300ms background;
+}
+
+label.radio input:checked + .radio:before {
+	background: #4285f4;
+}
+
+/* Checkbox */
+
+label.checkbox { cursor: pointer; }
+
+label.checkbox input { display: none; }
+
+label.checkbox .checkbox {
+	display: inline-block;
+	width: 36px;
+	height: 14px;
+	background: rgba(0, 0, 0, .26);
+	border-radius: 14px;
+	position: relative;
+	transition: 300ms background;
+}
+
+label.checkbox .checkbox span {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -3px;
+	left: 0;
+	background: #fff;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .4);
+	border-radius: 20px;
+	transition: 300ms left, background;
+}
+
+label.checkbox input:checked + .checkbox { background: #83b1f4; }
+
+label.checkbox input:checked + .checkbox span {
+	left: 16px;
+	background: #4285f4;
+}
