@@ -4,12 +4,9 @@ HTML elementlerinin daha güzel görünmesi için geliştirilmekte olan kütüph
 
 ## Kurulum
 
-cool.css dosyasını ister inderek ister sunucudan çekerek kullanacağınız html dosyalarına eklemeniz yeterli.
+cool.css dosyasını ister indirerek isterseniz de bu yöntemle kullanabilirsiniz.
 ```html
-<head>
-	<title>Cool CSS</title>
-	<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/inan-studio/cool.css/master/cool.css">
-</head>
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/inan-studio/cool.css/master/cool.css">
 ```
 
 ## React ile Kullanımı
